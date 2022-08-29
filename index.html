@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Student Registration</title>
+        <!--External CSS and JavaScript file links-->
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        
+    </head>
+    <body class="bg-img"> <!--Image set as background-->
+        <form aciton ="#">
+            <div id="fullpage">
+                <!--Table used to create the form-->
+                <table border="0"> 
+                    <tr>
+                        <td></td>
+                        <td><h2>Registration</h2></td>
+                    </tr>
+                    <tr>
+                        <!--Input classes and JavaScript validation-->
+                        <td class="label_col">First Name:</td>
+                        <td class="input_col"><input name="firstName" id="firstName" type="text" onblur="validateFirstName();" required></td> 
+                        <td class="feedback_col"><span id="firstNamePrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Middle Name:</td>
+                        <td class="input_col"><input name="middleName" id="middleName" type="text" onblur="validateMiddleName();" required></td> 
+                        <td class="feedback_col"><span id="middlePrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Last Name:</td>
+                        <td class="input_col"><input name="lastName" id="lastName" type="text" onblur="validateLastName();" required></td> 
+                        <td class="feedback_col"><span id="lastNamePrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>    
+                        <td class="label_col">Phone Number:</td>
+                        <td class="input_col"><input name="phone" id="phone" type="text" onblur="validatePhone();" placeholder="xxxxx-xxxxx" required></td> 
+                        <td class="feedback_col"><span id="phonePrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Date of Birth:</td>
+                        <td class="input_col"><input name="DOB" id="DOB" type="date" onblur="validateDOB();" required></td> 
+                        <td class="feedback_col"><span id="DOBPrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Gender:</td>
+                        <td>
+                            <input class="input_col" type="radio" name="gender" value="Male">Male<br>
+                            <input class="input_col" type="radio" name="gender" value="Female">Female,<br>
+                            <input class="input_col" type="radio" name="gender" value="Other">Other<br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">E-mail:</td>
+                        <td class="input_col"><input name="email" id="email" type="text" onblur="validateEmail();" placeholder="abc@xyz.com" required></td> 
+                        <td class="feedback_col"><span id="emailPrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td class="label_col">Password:</td>
+                        <td class="input_col"><input name="password" id="password" type="password" onblur="validatePassword();" placeholder="Create a password" required></td> 
+                        <td class="feedback_col"><span id="passwordPrompt">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <!--Span button used as instructed-->
+                        <td class="Button" id="Button"><span class="buttonBG" onclick="submitForm();">Submit</span></td>
+                    </tr>
+                </table>
+            </div>
+            
+        </form>
+    </body>
+</html>
